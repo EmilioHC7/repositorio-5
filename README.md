@@ -1,91 +1,85 @@
-                   📊 Análisis de Ventas - Documentación del Proyecto
+# 📊 Análisis de Ventas - Documentación del Proyecto
 
-📌 Descripción General
+## 📌 Descripción General
 
-Este proyecto tiene como objetivo el análisis de ventas utilizando Python y Pandas, con un enfoque en la limpieza, transformación y visualización de datos. Se incluyen cálculos de análisis descriptivo y estadístico, junto con un informe explicativo de hallazgos clave.
+Este proyecto tiene como objetivo analizar el comportamiento de ventas de una tienda en línea utilizando *Python* y *Pandas*. Se realiza un *proceso completo de análisis de datos*, que incluye:
 
+- *Limpieza y transformación de datos* para garantizar la calidad de la información.
+- *Exploración de datos* para entender patrones y tendencias.
+- *Visualización* mediante `Matplotlib`.
+- *Conclusiones y recomendaciones* para la optimización de ventas.
 
-📂 Contenido del Proyecto
+---
 
-📁 1. Datos de entrada
+## 📂 Contenido del Proyecto
 
-Archivo: 📊 datos_finales.xlsx
+### 📁 1. Datos de entrada
 
-📌 Contiene la información procesada y lista para el análisis.
+*Archivo:* `datos_finales.xlsx`
 
-🛠️ Se han aplicado procesos de limpieza y transformación para asegurar la calidad de los datos.
+Contiene la información procesada y lista para el análisis, después de aplicar procesos de limpieza y transformación.
 
+### 📒 2. Notebook de Análisis
 
+**Archivo:** `Ultimo_proyecto.ipynb`
 
-📒 2. Notebook de Análisis
+- *Carga y exploración de datos* (`df.info()`, `df.describe()`).
+- *Limpieza y tratamiento de valores nulos*.
+- *Eliminación de columnas irrelevantes con justificación clara*.
+- *Visualización de datos para detectar tendencias y patrones.*
 
-Archivo: 📓 Ultimo_proyecto.ipynb
+### 📄 3. Informe de Análisis
 
-🐍 Uso eficiente de Python y Pandas para el manejo de datos.
+*Archivo:* `INFORME_DE_ANÁLISIS_DE_VENTAS.docx`
 
-📈 Visualizaciones creadas con herramientas como Matplotlib y Seaborn.
+📜 Contiene:
 
-🔄 Transformaciones de datos aplicadas antes del análisis.
+- *💰 Resumen del total de ventas.*
+- *🛍️ Número de pedidos y ticket promedio.*
+- *🏆 Categorías más y menos vendidas.*
+- *📆 Tendencias de ventas por período.*
+- *✅ Conclusiones y recomendaciones.*
 
-📊 Métricas descriptivas y estadísticas extraídas.
+### 🖥️ 4. Dashboard Interactivo
 
-📉 Evaluación de tendencias de ventas y comportamiento del cliente.
+El archivo `datos_finales.xlsx` incluye un **Dashboard interactivo** para visualizar el comportamiento de ventas y productos a lo largo del tiempo.
 
+---
 
+## 📊 Columnas Principales del Conjunto de Datos
 
-📄 3. Informe de Análisis
+| *Columna*              | *Descripción*                      |
+| ---------------------- | ---------------------------------- |
+| `order_id`             | Identificador único del pedido.    |
+| `product_id`           | ID del producto comprado.          |
+| `price`                | Precio del producto en la orden.   |
+| `freight_value`        | Costo del envío.                   |
+| `customer_state`       | Estado donde se realizó la compra. |
+| `order_purchase_date`  | Fecha en que se realizó la compra. |
+| `order_delivered_date` | Fecha de entrega del pedido.       |
+| `product_category`     | Categoría del producto.            |
 
-Archivo: 📃 INFORME DE ANÁLISIS DE VENTAS.docx
+---
 
-📜 Incluye:
+## 🚀 Instrucciones de Uso
 
-💰 Resumen del total de ventas.
+1️⃣ *Abrir `Ultimo_proyecto.ipynb` en Jupyter Notebook.*  
+2️⃣ *Ejecutar todas las celdas* en orden para ver el procesamiento y análisis de datos.  
+3️⃣ *Revisar `INFORME_DE_ANÁLISIS_DE_VENTAS.docx`* para obtener un resumen ejecutivo de los hallazgos.  
+4️⃣ *Explorar el `Dashboard` en `datos_finales.xlsx`* para visualizar tendencias interactivas.  
 
-🛍️ Número de pedidos y ticket promedio.
+---
 
-🏆 Identificación de categorías más y menos vendidas.
+## 🎯 Conclusiones y Recomendaciones
 
-📆 Tendencias de ventas por período.
+📌 *La categoría más vendida* es `beleza_saude`, se recomienda reforzar su promoción.  
+📌 *Categorías con menor demanda* necesitan estrategias para aumentar sus ventas.  
+📌 *El ticket promedio* es *120.82*, se pueden implementar descuentos por compra mínima para aumentarlo.  
+📌 *Optimización logística:* Se sugiere analizar tiempos de entrega y reducir costos de envío.  
 
-✅ Conclusiones y recomendaciones basadas en los hallazgos.
+---
 
+## 📂 Autores y Referencias
 
-
-🖥️ 4. Dashboard en el archivo datos_finales.xlsx
-
-Visualizacion interactiva que permite analisas el comportamiento de las ventas, productos y estados dentro de un periodo de tiempo.
-
-
-
-🛠️ Requisitos y Tecnologías Usadas
-
-✅ Python 3.x
-✅ Pandas para manejo de datos
-✅ Matplotlib para visualización
-✅ Jupyter Notebook para documentar y ejecutar el análisis
-✅ Excel para almacenamiento de datos
-
-
-
-🚀 Instrucciones de Uso
-
-1️⃣ Abrir el archivo Ultimo_proyecto.ipynb en Jupyter Notebook.
-2️⃣ Ejecutar las celdas en orden para ver el procesamiento y análisis.
-3️⃣ Revisar INFORME DE ANÁLISIS DE VENTAS.docx para un resumen ejecutivo de los hallazgos.
-4️⃣ Opcionalmente, generar visualizaciones interactivas si el dashboard está implementado.
-
-
-
-🎯 Conclusiones y Recomendaciones
-
-📌 Se sugiere fortalecer estrategias en la categoría más vendida.
-📌 Evaluar mejoras en categorías con menor demanda.
-📌 Explorar estrategias para aumentar el ticket promedio.
-
-
-
-📂   Autores y Referencias
-
-📊 Base de datos : [Kaggle-Brazilian E-Commerce Public Dataset by Olist] https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
-
-✍️  Autores: Francisco Magioli · Leo Dabague · Andre Sionek 
+📊 Base de datos: [Kaggle - Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)  
+✍️ *Autores:* Francisco Magioli · Leo Dabague · Andre Sionek  
